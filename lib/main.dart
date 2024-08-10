@@ -1,0 +1,48 @@
+import 'package:flutter/material.dart';
+import 'package:test_project/screens/home.dart';
+import 'package:test_project/screens/login.dart';
+import 'package:test_project/screens/signup.dart';
+import 'package:test_project/screens/splash.dart';
+
+void main() {
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  // This widget is the root of your application.
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'Flutter Demo',
+      theme: ThemeData(
+  useMaterial3: true,
+  colorScheme: const ColorScheme(
+    brightness: Brightness.light,
+    primary: Colors.white,
+    onPrimary: Colors.black,
+    secondary: Colors.white,
+    onSecondary: Colors.black,
+    error: Colors.red,
+    onError: Colors.white,
+    surface: Colors.white,
+    onSurface: Colors.black,
+  ),
+),
+
+      initialRoute: '/',
+      routes: {
+        '/':(context) => const SplashScreen(),
+        '/home':(context) => const HomePage(),
+        '/login':(context) => const LoginScreen(),
+        '/signup':(context) => const SignupScreen(),
+      },
+      // home: const SplashScreen(),
+    );
+  }
+}
+
+
+
