@@ -12,6 +12,7 @@ class LoginScreen extends StatefulWidget {
 class _LoginScreenState extends State<LoginScreen> {
   bool _obscureText = true;
 
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -122,7 +123,8 @@ class _LoginScreenState extends State<LoginScreen> {
       	                Container(
       	                  padding: const EdgeInsets.all(8.0),
       	                  child: TextField(
-                              obscureText: _obscureText,      	                    decoration: InputDecoration(
+                              obscureText: _obscureText,      	                   
+                              decoration: InputDecoration(
       	                      border: InputBorder.none,
       	                      hintText: "Password",
       	                      hintStyle: TextStyle(color: Colors.grey[700]),

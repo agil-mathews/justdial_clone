@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:test_project/screens/categories.dart';
+import 'package:test_project/screens/categoriess.dart';
 import 'package:test_project/screens/home.dart';
 import 'package:test_project/screens/login.dart';
 import 'package:test_project/screens/signup.dart';
@@ -38,11 +40,13 @@ class MyApp extends StatelessWidget {
         '/home':(context) => const HomePage(),
         '/login':(context) => const LoginScreen(),
         '/signup':(context) => const SignupScreen(),
+        '/categories':(context) =>  CategoryPage(),
       },
       // home: const SplashScreen(),
     );
   }
 }
+
 
 
 

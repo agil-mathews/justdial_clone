@@ -107,24 +107,32 @@ class _HomePageState extends State<HomePage> {
           ],
         ),
       ),
-      bottomNavigationBar: BottomNavigationBar(
-        items: const <BottomNavigationBarItem>[
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            label: 'Home',
+      bottomNavigationBar: Padding(
+        padding: const EdgeInsets.only(bottom: 30.0,left: 10.0,right: 10.0),
+        child: ClipRRect(
+          borderRadius: BorderRadius.all(Radius.circular(20.0)),
+          child: BottomNavigationBar(
+            backgroundColor: Colors.black,
+            items: const <BottomNavigationBarItem>[
+              BottomNavigationBarItem(
+                icon: Icon(Icons.home),
+                label: 'Home',
+              ),
+              BottomNavigationBarItem(
+                icon: Icon(Icons.article),
+                label: 'News',
+              ),
+              BottomNavigationBarItem(
+                icon: Icon(Icons.info),
+                label: 'About',
+              ),
+            ],
+            currentIndex: _selectedIndex,
+            selectedItemColor: Colors.blue[400],
+            unselectedItemColor: Colors.white70,
+            onTap: _onItemTapped,
           ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.article),
-            label: 'News',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.info),
-            label: 'About',
-          ),
-        ],
-        currentIndex: _selectedIndex,
-        selectedItemColor: Colors.blue[800],
-        onTap: _onItemTapped,
+        ),
       ),
     );
   }
@@ -384,10 +392,7 @@ class _HomeContentState extends State<HomeContent> {
                   ),
                   GestureDetector(
                     onTap: () {
-                       Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => const JobListScreen()),
-                  );
+                       Navigator.pushNamed(context, '/categories');
                   },
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
