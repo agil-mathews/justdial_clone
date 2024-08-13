@@ -23,14 +23,14 @@ class CustomChip extends StatelessWidget {
           shape: BoxShape.rectangle,
         ),
       ),
-      label: Text(text),
-      labelPadding: EdgeInsets.only(left: 10,right: 20,top: 5,bottom: 5),
+      label: Text(text,style: const TextStyle(fontSize: 12,fontWeight: FontWeight.bold,fontFamily: 'Poppins'),),
+      labelPadding: const EdgeInsets.only(left: 10,right: 20,top: 5,bottom: 5),
       backgroundColor: Colors.white,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(20.0),
-        side: BorderSide(
+        side: const BorderSide(
           width: 0.8,
-          color: Colors.grey
+          color: Color.fromARGB(255, 203, 203, 203)
         ) // Circular border radius
       ),
     );

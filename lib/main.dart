@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:test_project/screens/categories.dart';
 import 'package:test_project/screens/categoriess.dart';
 import 'package:test_project/screens/home.dart';
 import 'package:test_project/screens/login.dart';
@@ -20,6 +19,13 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
+        textTheme: const TextTheme(
+          bodyLarge: TextStyle(fontFamily: 'Poppins'),
+          bodyMedium: TextStyle(fontFamily: 'Poppins'),
+          displayLarge: TextStyle(fontFamily: 'Poppins'),
+          displayMedium: TextStyle(fontFamily: 'Poppins'),
+          // Add more styles as needed
+        ),
   useMaterial3: true,
   colorScheme: const ColorScheme(
     brightness: Brightness.light,

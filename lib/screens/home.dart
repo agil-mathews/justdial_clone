@@ -160,7 +160,7 @@ class FullScreenMenu extends StatelessWidget {
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text('Full Name', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+                          Text('Full Name', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold,fontFamily: 'Poppins')),
                           SizedBox(height: 4),
                           Text('Phone Number', style: TextStyle(fontSize: 14, color: Colors.grey)),
                         ],
