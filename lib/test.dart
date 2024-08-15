@@ -20,7 +20,7 @@ class _CategoryPageState extends State<CategoryPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('All Categories'),
+        title: const Text('All Categories'),
         centerTitle: true,
       ),
       body: Column(
@@ -31,14 +31,14 @@ class _CategoryPageState extends State<CategoryPage> {
             child: TextField(
               decoration: InputDecoration(
                 hintText: 'Search categories',
-                prefixIcon: Icon(Icons.search),
+                prefixIcon: const Icon(Icons.search),
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(8.0),
                 ),
               ),
             ),
           ),
-          Divider(
+          const Divider(
             height: 1,
             thickness: 1,
           ),
@@ -82,7 +82,7 @@ class _CategoryPageState extends State<CategoryPage> {
                   return Column(
                     children: [
                       ClipRRect(
-                        borderRadius: BorderRadius.vertical(top: Radius.circular(10)), // Apply border radius only to the top corners
+                        borderRadius: const BorderRadius.vertical(top: Radius.circular(10)), // Apply border radius only to the top corners
                         child: Container(
                           color: expandedTiles.contains(index) ? Colors.brown : Colors.white,
                           child: ExpansionTile(
@@ -99,7 +99,7 @@ class _CategoryPageState extends State<CategoryPage> {
                             children: [
                               Container(
                                 color: Colors.white, // Ensure the ListTile background is white
-                                child: Column(
+                                child: const Column(
                                   children: [
                                     ListTile(title: Text('Subcategory 1')),
                                     ListTile(title: Text('Subcategory 2')),
@@ -111,7 +111,7 @@ class _CategoryPageState extends State<CategoryPage> {
                           ),
                         ),
                       ),
-                      SizedBox(height: 8), // Add some space between items
+                      const SizedBox(height: 8), // Add some space between items
                     ],
                   );
                 },

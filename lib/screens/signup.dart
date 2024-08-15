@@ -18,7 +18,7 @@ class _SignupScreenState extends State<SignupScreen> {
     return  Scaffold(
       body: Container(
         width: double.infinity,
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           gradient: LinearGradient(
             begin: Alignment.topCenter,
             colors: [

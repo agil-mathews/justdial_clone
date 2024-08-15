@@ -3,7 +3,7 @@ import 'package:test_project/screens/categoriess.dart';
 import 'package:test_project/screens/home.dart';
 import 'package:test_project/screens/login.dart';
 import 'package:test_project/screens/signup.dart';
-import 'package:test_project/screens/splash.dart';
+import 'package:test_project/screens/splashpage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -42,7 +42,7 @@ class MyApp extends StatelessWidget {
 
       initialRoute: '/',
       routes: {
-        '/':(context) => const SplashScreen(),
+        '/':(context) => const SplashPage(),
         '/home':(context) => const HomePage(),
         '/login':(context) => const LoginScreen(),
         '/signup':(context) => const SignupScreen(),
